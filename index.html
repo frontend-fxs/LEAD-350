@@ -1,0 +1,396 @@
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    * {
+            box-sizing: border-box;
+            text-rendering: optimizelegibility;
+        }
+        
+        body {
+            font-family: "Roboto", sans-serif;
+            color: #49494f;
+            font-size: 1rem;
+            line-height: 1.38rem;
+            padding: 15px;
+            background-color: transparent;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        
+        a {
+            color: #e4871b;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .fxs_row {
+            margin-left: -0.5rem;
+            margin-right: -0.5rem;
+        }
+        
+        .fxs_transition_module {
+            padding: 15px !important;
+            content: " ";
+            clear: both;
+        }
+        
+        .fxs_contributorBox_header {
+            margin-bottom: 7.5px;
+            padding-bottom: 7.5px;
+            display: block;
+            border: 0 none;
+        }
+        
+        .fxs_squareImage {
+            float: right;
+            height: 70px;
+            margin-left: 7.5px;
+            width: 70px;
+        }
+    }
+    .fxs_squareImage_s {
+        height: 35px;
+        width: 35px;
+    }
+    .fxs_floatingMedia_textBody {
+        overflow: hidden;
+        display: block;
+    }
+    .fxs_headline_from_medium {
+        display: block;
+        font-size: 1.68rem;
+        line-height: 2rem;
+        color: #1b1c23;
+        letter-spacing: -0.02rem;
+        margin: 0 0 0.33em;
+        text-decoration: none;
+    }
+    .fxs_headline_medium a:hover {
+        color: #e4871b;
+    }
+    .fxs_entryPlain_txt {
+        font-size: 0.9rem;
+        font-weight: 300;
+        line-height: 1.35em;
+    }
+    .fxs_paddingBase_top {
+        padding-top: 1rem;
+    }
+    .fxs_col {
+        float: right;
+        min-height: 1px;
+        position: relative;
+        border: 0 none;
+        margin: 0;
+    }
+    .fxs_col_25 {
+        width: 25%;
+    }
+    .fxs_col_45 {
+        width: 45%;
+        padding: 0 10px;
+    }
+    .fxs_col_30 {
+        width: 30%;
+        float: right;
+    }
+    .fxs_formGroup {
+        margin-bottom: 1rem;
+        margin-left: 2px;
+        border: 0 none;
+    }
+    .fxs_textInput {
+        background-color: #fff;
+        border: 1px solid #a3a3a8;
+        color: #49494f;
+        font-size: 0.8rem;
+        height: 35px;
+        padding: 5px 1rem;
+        margin-bottom: 0.22rem;
+        width: 100%;
+        outline: 0 none;
+        border-radius: 0;
+    }
+    .fxs_align_center {
+        text-align: center;
+    }
+    .fxs_clearfix {
+        content: " ";
+        clear: both;
+        width: 100%;
+    }
+    .fxs_btn {
+        margin: 0.1rem 0 0;
+    }
+    .fxs_btn_block {
+        display: block;
+        width: 100%;
+    }
+    .fxs_btn_cta {
+        background-color: #e4871b;
+        border: none;
+        color: #fff;
+        font-size: 0.8rem;
+        text-decoration: none !important;
+        cursor: pointer;
+        line-height: 34px;
+        min-height: 35px;
+        padding: 0 1rem;
+        text-align: center;
+        vertical-align: middle;
+        outline: 0 none;
+    }
+    .fxs_btn_cta:hover {
+        background-color: #E89E47;
+    }
+    .fxs_termsconditions {
+        width: 100%;
+        float: right;
+        clear: both;
+    }
+    .fxs_termsconditions:after {
+        display: table;
+        content: " ";
+        clear: both;
+    }
+    #termsconditions {
+        float: left;
+    }
+    .fxs_termsconditions .fxs_txt_xsmall {
+        font-size: 12px;
+        line-height: 18px;
+        float: right;
+        width: calc(100% - 50px);
+    }
+    .fxs_termsconditions a {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .modalBack {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.5);
+        display: none;
+    }
+    #lead_sended {
+        background: #338473;
+        color: white;
+        font-size: 12px;
+        padding: 1px;
+        line-height: 12px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .error {
+        background: #D25746;
+        color: white;
+        font-size: 12px;
+        padding: 1px;
+        line-height: 12px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    form {
+        display: table;
+        background: white;
+        padding: 10px;
+    }
+    .fxs_phone_code {
+        float: right;
+        background-color: #ececf1;
+        border: 1px solid #dddedf;
+        color: #8c8d91;
+        font-size: .8rem;
+        height: 35px;
+        width: 60px;
+        line-height: 35px;
+        padding: 0 .25rem;
+        text-align: center;
+        margin-left: 5px;
+    }
+    .fxs_country_select {
+        float: right;
+        width: 100px;
+    }
+    .fxs_phone_input {
+        width: calc(100% - 165px);
+    }
+    button[disabled] {
+        background-color: rgba(228, 135, 27, 0.8);
+        border-color: rgba(228, 135, 27, 0.4);
+        cursor: not-allowed;
+    }
+    .fxs_spinner {
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+        width: 31px;
+        height: 31px;
+    }
+    .fxs_spinner_wrapper {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.5);
+        display: none;
+    }
+     ::-webkit-input-placeholder {
+        /* WebKit browsers */
+        
+        direction: rtl;
+    }
+     :-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        
+        direction: rtl;
+    }
+     ::-moz-placeholder {
+        /* Mozilla Firefox 19+ but I'm not sure about working */
+        
+        direction: rtl;
+    }
+     :-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+        
+        direction: rtl;
+    }
+    .fxs_fRight {
+        float: right;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        (function($) {
+            var englishLanguageId = '7cb7a61d-5d42-46ad-b9c0-fa83ca0d711e';
+            var typePromotion = 0;
+            var leadsBoUrl = 'https://lead-bo-webapi-fxs.azurewebsites.net/en-US/api/v1/lead';
+            var dfpData = {
+                "adType": "[%adType%]",
+                "width": 1280,
+                "height": 260,
+                "client": "[%client%]",
+                "campaign": "[%client%] - [%campaign%]"
+            };
+            leadSubmit = function() {
+                var phoneNumber = '+' + $('#lead_phonecode').html() + ' ' + $('#lead_phone').val();
+                var data = {
+                    'Broker': $('#lead_broker').val(),
+                    'Country': $('#lead_country :selected').html(),
+                    'Description': $('#lead_description').val(),
+                    'Email': '',
+                    'LanguageId': englishLanguageId,
+                    'Name': $('#lead_fullname').val(),
+                    'Phone': phoneNumber,
+                    'Type': typePromotion
+                };
+                if (!validateFullName(data.Name)) {
+                    $('#modalBackError').show().delay(7000).fadeOut(1000);
+                    $('#lead_error').html('Invalid Name');
+                    return false;
+                }
+                if (!validatePhoneNumber(data.Phone)) {
+                    $('#modalBackError').show().delay(7000).fadeOut(1000);
+                    $('#lead_error').html('Invalid Phone Number');
+                    return false;
+                }
+                $('#fxs_spinner_wrapper').show();
+                sendLead(data);
+                return false;
+            };
+            sendLead = function(data) {
+                $.ajax({
+                    url: leadsBoUrl,
+                    type: 'POST',
+                    crossDomain: true,
+                    data: JSON.stringify(data),
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    error: function(xhr, error) {
+                        $('#modalBackError').show().delay(7000).fadeOut(1000);
+                        $('#lead_error').html('Sorry, we are having problems with the server. Please try again later. Sorry for the inconvenience. ');
+                        $('#fxs_spinner_wrapper').hide();
+                    },
+                    success: function() {
+                        $('#modalBackSuccess').show().delay(7000).fadeOut(1000);
+                        $('#ss-submit').attr('disabled', 'disabled');
+                        $('#fxs_spinner_wrapper').hide();
+                        sendDataToDfp();
+                    }
+                });
+            };
+            sendDataToDfp = function() {
+                window.parent.postMessage(dfpData, 'https://www.fxstreet.com');
+            };
+            fillPhoneCode = function(element) {
+                var phoneCode = $(element).find("option:selected").val();
+                $('#lead_phonecode').text(phoneCode);
+            };
+            validateFullName = function(fullName) {
+                var nameRegExp = new RegExp(/^[a-zA-Z�-� ,.'-]+$/);
+                return nameRegExp.test(fullName);
+            };
+            validatePhoneNumber = function(phone) {
+                var phoneRegExp = new RegExp(/^[0-9\-\(\)\s\+]+$/);
+                var result = phoneRegExp.test(phone);
+                return result;
+            };
+        })(jQuery)
+    </script>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" class="w[1280]">
+    <form id="leadForm" method="post" action="" onsubmit="return leadSubmit()">
+        <div class="fxs_col fxs_col_25"> <img alt="FXStreet" style="width: 100%;" src="[%leadImage%]"> </div>
+        <div class="fxs_col fxs_col_45">
+            <header class="fxs_contributorBox_header">
+                <div class="fxs_squareImage fxs_squareImage_s"> <img src="[%logo%]" alt="[%client%]" width="70" height="70"> </div>
+                <h3 class="fxs_floatingMedia_textBody fxs_headline_from_medium" rel="author"> [%title%] </h3>
+                <footer class="fxs_floatingMedia_textBody fxs_entryPlain_txt"> [%body%] </footer>
+            </header>
+        </div>
+        <div class="fxs_col fxs_col_30 fxs_paddingBase_top">
+            <div role="listitem">
+                <div style="margin-bottom:0.2rem;" class="fxs_formGroup"> <input id="lead_fullname" placeholder="Write your full name *" value="" class="fxs_textInput" dir="auto" aria-label="fullName " title="" type="text" required> </div>
+            </div>
+            <div role="listitem">
+                <div style="margin-bottom:0.2rem;" class="fxs_formGroup"> <select id="lead_country" onchange="fillPhoneCode(this)" aria-label="country" required class="fxs_country_select fxs_textInput"> <option value="" disabled="" selected=""> Country </option> <option value="93"> Afghanistan </option> <option value="355"> Albania </option> <option value="213"> Algeria </option> <option value="1-684"> American Samoa </option> <option value="376"> Andorra </option> <option value="244"> Angola </option> <option value="1-264"> Anguilla </option> <option value="672"> Antarctica </option> <option value="1-268"> Antigua and Barbuda </option> <option value="54"> Argentina </option> <option value="374"> Armenia </option> <option value="297"> Aruba </option> <option value="61"> Australia </option> <option value="43"> Austria </option> <option value="994"> Azerbaijan </option> <option value="1-242"> Bahamas </option> <option value="973"> Bahrain </option> <option value="880"> Bangladesh </option> <option value="1-246"> Barbados </option> <option value="375"> Belarus </option> <option value="32"> Belgium </option> <option value="501"> Belize </option> <option value="229"> Benin </option> <option value="1-441"> Bermuda </option> <option value="975"> Bhutan </option> <option value="591"> Bolivia </option> <option value="387"> Bosnia and Herzegovina </option> <option value="267"> Botswana </option> <option value=""> Bouvet Island </option> <option value="55"> Brazil </option> <option value="246"> British Indian Ocean Territory </option> <option value="1-284"> British Virgin Islands </option> <option value="673"> Brunei </option> <option value="359"> Bulgaria </option> <option value="226"> Burkina Faso </option> <option value="257"> Burundi </option> <option value="855"> Cambodia </option> <option value="237"> Cameroon </option> <option value="1"> Canada </option> <option value="238"> Cape Verde </option> <option value="1-345"> Cayman Islands </option> <option value="236"> Central African Republic </option> <option value="235"> Chad </option> <option value="56"> Chile </option> <option value="86"> China </option> <option value="61"> Christmas Island </option> <option value="61"> Cocos [Keeling] Islands </option> <option value="57"> Colombia </option> <option value="269"> Comoros </option> <option value="243"> Congo [DRC] </option> <option value="242"> Congo [Republic] </option> <option value="682"> Cook Islands </option> <option value="506"> Costa Rica </option> <option value="225"> C�te d'Ivoire </option> <option value="385"> Croatia </option> <option value="53"> Cuba </option> <option value="357"> Cyprus </option> <option value="420"> Czech Republic </option> <option value="45"> Denmark </option> <option value="253"> Djibouti </option> <option value="1-767"> Dominica </option> <option value="1-809, 1-829, 1-849"> Dominican Republic </option> <option value="593"> Ecuador </option> <option value="20"> Egypt </option> <option value="503"> El Salvador </option> <option value="240"> Equatorial Guinea </option> <option value="291"> Eritrea </option> <option value="372"> Estonia </option> <option value="251"> Ethiopia </option> <option value="500"> Falkland Islands [Islas Malvinas] </option> <option value="298"> Faroe Islands </option> <option value="679"> Fiji </option> <option value="358"> Finland </option> <option value="33"> France </option> <option value="594"> French Guiana </option> <option value="689"> French Polynesia </option> <option value=""> French Southern Territories </option> <option value="241"> Gabon </option> <option value="220"> Gambia </option> <option value=""> Gaza Strip </option> <option value="995"> Georgia </option> <option value="49"> Germany </option> <option value="233"> Ghana </option> <option value="350"> Gibraltar </option> <option value="30"> Greece </option> <option value="299"> Greenland </option> <option value="1-473"> Grenada </option> <option value=""> Guadeloupe </option> <option value="1-671"> Guam </option> <option value="502"> Guatemala </option> <option value="44-1481"> Guernsey </option> <option value="224"> Guinea </option> <option value="245"> Guinea-Bissau </option> <option value="592"> Guyana </option> <option value="509"> Haiti </option> <option value=""> Heard Island and McDonald Islands </option> <option value="504"> Honduras </option> <option value="852"> Hong Kong </option> <option value="36"> Hungary </option> <option value="354"> Iceland </option> <option value="91"> India </option> <option value="62"> Indonesia </option> <option value="98"> Iran </option> <option value="964"> Iraq </option> <option value="353"> Ireland </option> <option value="44-1624"> Isle of Man </option> <option value="972"> Israel </option> <option value="39"> Italy </option> <option value="1-876"> Jamaica </option> <option value="81"> Japan </option> <option value="44-1534"> Jersey </option> <option value="962"> Jordan </option> <option value="7"> Kazakhstan </option> <option value="254"> Kenya </option> <option value="686"> Kiribati </option> <option value="383"> Kosovo </option> <option value="965"> Kuwait </option> <option value="996"> Kyrgyzstan </option> <option value="856"> Laos </option> <option value="371"> Latvia </option> <option value="961"> Lebanon </option> <option value="266"> Lesotho </option> <option value="231"> Liberia </option> <option value="218"> Libya </option> <option value="423"> Liechtenstein </option> <option value="370"> Lithuania </option> <option value="352"> Luxembourg </option> <option value="853"> Macau </option> <option value="389"> Macedonia [FYROM] </option> <option value="261"> Madagascar </option> <option value="265"> Malawi </option> <option value="60"> Malaysia </option> <option value="960"> Maldives </option> <option value="223"> Mali </option> <option value="356"> Malta </option> <option value="692"> Marshall Islands </option> <option value=""> Martinique </option> <option value="222"> Mauritania </option> <option value="230"> Mauritius </option> <option value="262"> Mayotte </option> <option value="52"> Mexico </option> <option value="691"> Micronesia </option> <option value="373"> Moldova </option> <option value="377"> Monaco </option> <option value="976"> Mongolia </option> <option value="382"> Montenegro </option> <option value="1-664"> Montserrat </option> <option value="212"> Morocco </option> <option value="258"> Mozambique </option> <option value="95"> Myanmar [Burma] </option> <option value="264"> Namibia </option> <option value="674"> Nauru </option> <option value="977"> Nepal </option> <option value="31"> Netherlands </option> <option value="599"> Netherlands Antilles </option> <option value="687"> New Caledonia </option> <option value="64"> New Zealand </option> <option value="505"> Nicaragua </option> <option value="227"> Niger </option> <option value="234"> Nigeria </option> <option value="683"> Niue </option> <option value="672"> Norfolk Island </option> <option value="850"> North Korea </option> <option value="1-670"> Northern Mariana Islands </option> <option value="47"> Norway </option> <option value="968"> Oman </option> <option value="92"> Pakistan </option> <option value="680"> Palau </option> <option value="970"> Palestinian Territories </option> <option value="507"> Panama </option> <option value="675"> Papua New Guinea </option> <option value="595"> Paraguay </option> <option value="51"> Peru </option> <option value="63"> Philippines </option> <option value="64"> Pitcairn Islands </option> <option value="48"> Poland </option> <option value="351"> Portugal </option> <option value="1-787, 1-939"> Puerto Rico </option> <option value="974"> Qatar </option> <option value="262"> R�union </option> <option value="40"> Romania </option> <option value="7"> Russia </option> <option value="250"> Rwanda </option> <option value="290"> Saint Helena </option> <option value="1-869"> Saint Kitts and Nevis </option> <option value="1-758"> Saint Lucia </option> <option value="508"> Saint Pierre and Miquelon </option> <option value="1-784"> Saint Vincent and the Grenadines </option> <option value="685"> Samoa </option> <option value="378"> San Marino </option> <option value="239"> S�o Tom� and Pr�ncipe </option> <option value="966"> Saudi Arabia </option> <option value="221"> Senegal </option> <option value="381"> Serbia </option> <option value="248"> Seychelles </option> <option value="232"> Sierra Leone </option> <option value="65"> Singapore </option> <option value="421"> Slovakia </option> <option value="386"> Slovenia </option> <option value="677"> Solomon Islands </option> <option value="252"> Somalia </option> <option value="27"> South Africa </option> <option value="995"> South Georgia and the South Sandwich Islands </option> <option value="82"> South Korea </option> <option value="34"> Spain </option> <option value="94"> Sri Lanka </option> <option value="249"> Sudan </option> <option value="597"> Suriname </option> <option value="47"> Svalbard and Jan Mayen </option> <option value="268"> Swaziland </option> <option value="46"> Sweden </option> <option value="41"> Switzerland </option> <option value="963"> Syria </option> <option value="886"> Taiwan </option> <option value="992"> Tajikistan </option> <option value="255"> Tanzania </option> <option value="66"> Thailand </option> <option value="670"> Timor-Leste </option> <option value="228"> Togo </option> <option value="690"> Tokelau </option> <option value="676"> Tonga </option> <option value="1-868"> Trinidad and Tobago </option> <option value="216"> Tunisia </option> <option value="90"> Turkey </option> <option value="993"> Turkmenistan </option> <option value="1-649"> Turks and Caicos Islands </option> <option value="688"> Tuvalu </option> <option value=""> U.S. Minor Outlying Islands </option> <option value="1-340"> U.S. Virgin Islands </option> <option value="256"> Uganda </option> <option value="380"> Ukraine </option> <option value="971"> United Arab Emirates </option> <option value="44"> United Kingdom </option> <option value="1"> United States </option> <option value="598"> Uruguay </option> <option value="998"> Uzbekistan </option> <option value="678"> Vanuatu </option> <option value="379"> Vatican City </option> <option value="58"> Venezuela </option> <option value="84"> Vietnam </option> <option value="681"> Wallis and Futuna </option> <option value="212"> Western Sahara </option> <option value="967"> Yemen </option> <option value="260"> Zambia </option> <option value="263"> Zimbabwe </option> </select>                    <span class="fxs_phone_code">(+<span id="lead_phonecode"></span>)</span> <input id="lead_phone" placeholder="Phone Number *" value="" class="fxs_textInput fxs_phone_input" dir="auto" aria-label="phone " title="" type="text" required>                    </div>
+            </div> <input name="lead_broker" id="lead_broker" dir="auto" aria-label="broker" title="" type="hidden" value="[%email%]"> <input name="lead_description" id="lead_description" dir="auto" aria-label="description" title="" type="hidden" value="[%client%] - [%campaign%]">
+            <div class="fxs_align_center fxs_clearfix" style="margin-bottom:0.2rem;"> <button value="Apply Now" class="fxs_btn fxs_btn_cta fxs_btn_block" id="ss-submit" type="submit"> [%CTA%] </button> </div>
+            <label class="fxs_termsconditions" for="termsconditions"> <input type="checkbox" required class="fxs_fRight"/> <span class="fxs_txt_xsmall"> I hereby accept that my data is sent to [%client%] and agree to the <a href="https://www.fxstreet.com/info/terms-conditions" target="_blank"> terms and conditions </a> of FXStreet and <a href="[%termsurl%]" target="_blank"> [%client%] </a> </span> </label>
+        </div>
+    </form>
+    <div id="modalBackSuccess" class="modalBack" onclick="$(this).hide();">
+        <div class="fxs_align_center fxs_clearfix" id="lead_sended">
+            <p>Thank you, you successfully submitted your request! The partner you selected will contact you shortly.</p>
+        </div>
+    </div>
+    <div id="modalBackError" class="modalBack" onclick="$(this).hide();">
+        <div class="fxs_align_center fxs_clearfix error">
+            <p id="lead_error"></p>
+        </div>
+    </div>
+    <div class="fxs_spinner_wrapper" id="fxs_spinner_wrapper"> <img src="https://staticcontent.azureedge.net/website/img/fxs_spinner.gif" class="fxs_spinner" /> </div>
+</body>
+
+</html>
